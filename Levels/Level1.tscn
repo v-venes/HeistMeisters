@@ -42,5 +42,11 @@ rotation = 7.06857
 position = Vector2( 1418, -119 )
 rotation = 7.06857
 
-[node name="Guard" parent="Guards" index="0" instance=ExtResource( 3 )]
-position = Vector2( 247, 180 )
+[node name="Guard0" parent="Guards" index="0" instance=ExtResource( 3 )]
+position = Vector2( -163, 28 )
+
+[node name="Guard1" parent="Guards" index="1" instance=ExtResource( 3 )]
+position = Vector2( 938, 256 )
+
+[node name="Guard2" parent="Guards" index="2" instance=ExtResource( 3 )]
+position = Vector2( 1870, 578 )
