@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Levels/TemplateLevel.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Characters/NPCs/Camera.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Characters/NPCs/Guard.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Doors/Door.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Doors/LockedDoor.tscn" type="PackedScene" id=5]
 
 [node name="Level1" instance=ExtResource( 1 )]
 
@@ -30,6 +31,9 @@ position = Vector2( 1648, 122 )
 [node name="Destination4" type="Position2D" parent="Navigation2D/Destinations" index="4"]
 position = Vector2( 1876, 628 )
 
+[node name="Player" parent="." index="1"]
+position = Vector2( 953, 322 )
+
 [node name="Camera" parent="Cameras" index="0" instance=ExtResource( 2 )]
 position = Vector2( 510, 50 )
 rotation = 4.71238
@@ -50,7 +54,7 @@ rotation = 7.06857
 position = Vector2( -163, 28 )
 
 [node name="Guard1" parent="Guards" index="1" instance=ExtResource( 3 )]
-position = Vector2( 938, 256 )
+position = Vector2( 1616, 200 )
 
 [node name="Guard2" parent="Guards" index="2" instance=ExtResource( 3 )]
 position = Vector2( 1870, 578 )
@@ -65,14 +69,14 @@ position = Vector2( 1761, 417 )
 position = Vector2( 735, 352 )
 rotation = 1.5708
 
-[node name="Area2D3" parent="Doors" index="3" instance=ExtResource( 4 )]
-position = Vector2( 1109, 352 )
-rotation = 1.5708
-
-[node name="Area2D4" parent="Doors" index="4" instance=ExtResource( 4 )]
+[node name="Area2D4" parent="Doors" index="3" instance=ExtResource( 4 )]
 position = Vector2( 223, 160 )
 rotation = 1.5708
 
-[node name="Area2D5" parent="Doors" index="5" instance=ExtResource( 4 )]
+[node name="Area2D5" parent="Doors" index="4" instance=ExtResource( 4 )]
 position = Vector2( 223, -160 )
+rotation = 1.5708
+
+[node name="LockedDoor" parent="LockedDoors" index="0" instance=ExtResource( 5 )]
+position = Vector2( 1121, 352 )
 rotation = 1.5708
